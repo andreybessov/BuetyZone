@@ -3,11 +3,11 @@
    bottom: -50px;
    right: 23px;
    fill: var(--big-star-color);
+   animation: spin 5s infinite;
 
     @media screen and (min-width: $bp-desktop){
         top: 360px;
         right: 300px;
-        animation: spin 5s infinite;
     }
 }
 
