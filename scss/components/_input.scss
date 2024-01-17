@@ -1,0 +1,23 @@
+.input {
+
+    &__control {
+    display: block;
+    width: 100%;
+    padding: 18px 33px;
+    background-color: transparent;
+    border: 2px solid var(--color-privacy-policy);
+    border-radius: 32px;
+    color: var(--color-white);
+    font-size: 13px;
+
+        &:focus {
+            background-color: var(--color-privacy-policy);
+            outline: none;
+        }
+
+        &::placeholder {
+            color: var(--color-white);
+            font-size: 13px;
+        }
+    }
+}
