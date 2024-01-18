@@ -15,6 +15,7 @@
         @media screen and (min-width: $bp-tablet) {
             background-image: url(../images/photo-background.png);
             position: absolute;
+            display: block;
             content: '';
             background-repeat: no-repeat;
             width: 247px;
