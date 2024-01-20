@@ -24,6 +24,7 @@
     text-decoration: none;
     font-size: 16px;
     transition: color 0.2s;
+    white-space: nowrap;
 
     &:hover {
         color: var(--color-brand-light);
@@ -67,4 +68,10 @@
 .mobile-link {
     text-decoration: none;
     margin-bottom: 16px;
+    color: var(--color-primary-light);
+
+    &:hover {
+            font-weight: 700;
+            color: var(--color-brand-light);
+    }
 }
