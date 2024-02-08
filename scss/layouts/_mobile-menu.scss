@@ -4,71 +4,47 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 16px 20px 0;
     background-color: var(--color-white);
     transform: translateX(100%);
     transition: transform 0.3s;
-    overflow: hidden;
     z-index: 2;
+    overflow: hidden;
 
-    @media screen and (min-width: $bp-tablet) {
-        display: none;
-    }
+    @media screen and (min-width: $bp-desktop) {
+            display: none;
+        }
 
     &.is-open {
-        transform: translateX(0);
+     transform: translate(0);
     }
 
     &__btn-close {
-        position: absolute;
-        height: 24px;
-        width: 24px;            
-        top: 16px;
-        right: 20px;
-        background-image: url(../images/btn-close-burger.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        border: none;
-        background-color: transparent;
-        }
-
-    &__list {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        padding: 0;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    top: 16px;
+    right: 20px;
+    background-image: url(../images/btn-close-burger.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
     }
 
-    &__item {
-        font-family: Roboto;
+    &__nav{
+        padding-top: 16px;
+        padding-left: 20px;
+    }
+
+    &__list{
+        padding: 0;
+        margin-top: 32px;
         font-size: 14px;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
-    }
-
-    &__link {
-        color: var(--color-primary-light);
-        text-decoration: none;
-        transition: color 0.2s;
-    }
-
-    &__link:hover {
-        color: var(--color-brand-light);
-    }
-
-    &__icons {
-        display: flex;
-        gap: 16px;
-        padding: 0;
     }
 
     &__icon {
-        fill: var(--color-primary-light);
-        transition: fill 0.2s;
-
-        &:hover {
-            fill: var(--color-brand-light);
-        }
+        display: flex;
+        gap: 16px;
     }
-}
+ }
